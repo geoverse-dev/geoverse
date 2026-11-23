@@ -1,35 +1,68 @@
-# geoverse.dev
+# Geoverse.dev 🌍
 
-Static, dependency-free geoverse.dev project hub. Plain HTML, CSS and JavaScript.
+### An open universe of geospatial software.
 
-## Publish on GitHub Pages
+**Geoverse.dev** is an open-source hub bringing together geospatial tools, libraries, integrations, and experimental projects.
 
-1. Copy **the contents** of this folder into the root of the `geoverse-dev/geoverse` repository.
-2. Commit and push to the publishing branch (typically `main`).
-3. In GitHub → Settings → Pages, choose **Deploy from a branch**, `main`, `/ (root)` (unless your repository already has a working deployment workflow).
-4. Configure `geoverse.dev` as the custom domain in Pages and ensure the DNS records point to GitHub Pages. The included `CNAME` file is for that domain.
-5. Enable **Enforce HTTPS** once DNS/SSL is ready.
+Our goal is simple: **build, explore, and share open geospatial technology.**
 
-If your repository already has Pages configured, preserve its existing deployment settings and just replace the site files.
+From spatial data formats and interoperability to mapping applications and developer tools, geoverse.dev provides a common space for projects that help advance the open geospatial ecosystem.
 
-## Editing
+🌐 **[Explore geoverse.dev](https://geoverse.dev/)**
 
-- `index.html`: project cards, copy and GitHub URLs.
-- `styles.css`: colors, layout and responsiveness.
-- `script.js`: category filters.
-- `assets/*.webp`: graphics from the approved visual mockup, upscaled and sharpened to improve presentation. Since the source is a raster mockup, this does not recreate detail absent from the original; original high-resolution screenshots can replace these later. Replace with high-resolution original assets/screenshots when available.
-- `assets/favicon.svg`: simple vector favicon inspired by the logo (not a source-vector reproduction).
+---
 
-Only public repositories are included. The cards use explicitly named repository URLs; they do not dynamically fetch GitHub data. The Portolan SDK card links to Java and Python. The mockup's illustration labels are artwork, not live benchmark measurements or software screenshots.
+## Explore the ecosystem
 
-## Local preview
+geoverse.dev hosts projects across different areas of geospatial technology.
 
-Open `index.html` in your browser or run `python3 -m http.server 8000` from this folder.
+### 🗂️ Spatial data & interoperability
 
-No build step, package manager or dependencies required.
+Tools and libraries for working with open geospatial data formats, catalogs, and standards.
 
-## v2 adjustments
+- **Portolan SDKs** — Java and Python libraries for working with directory-based geospatial catalogs.
+- **Portolan Conformance** — Shared behavioral contracts and tests to support consistent implementations.
 
-- Removed About links from header, hero and footer; the About geoverse.dev informational panel remains on the homepage.
-- Increased layout dimensions, typography, card images and spacing for a comfortable default 100% browser zoom.
-- Reprocessed the supplied card artwork at higher output resolution with gentle sharpening.
+### 🗺️ Applications & integrations
+
+Connecting open geospatial technologies and making spatial data more accessible.
+
+- **GeoServer + Portolan** — Integration of Portolan catalogs with GeoServer.
+- **JOSM GeoParquet** — Bringing GeoParquet datasets into JOSM for exploration and comparison with OpenStreetMap.
+
+### 🔬 Research & experimentation
+
+Exploring new approaches, evaluating technologies, and sharing practical findings.
+
+- **GeoParquet Reader Benchmarks** — Comparing approaches and performance when reading GeoParquet datasets.
+- **State of the Map 2026 Samples** — Examples and experimental resources shared with the geospatial community.
+
+Discover the projects, their documentation, and source code at **[geoverse.dev](https://geoverse.dev/)**.
+
+---
+
+## Built in the open
+
+We believe open-source software is more than publicly available code.
+
+It is about sharing knowledge, encouraging experimentation, improving interoperability, and creating opportunities for people to build upon each other's work.
+
+geoverse.dev is intended to be a place where ideas can evolve into useful tools, experiments can become reusable components, and independent projects can contribute to a broader ecosystem.
+
+Projects may have different goals, technologies, maintainers, and levels of maturity, but they share a commitment to openness and collaboration.
+
+## Get involved
+
+Whether you're a developer, researcher, GIS professional, or simply curious about open geospatial technology, you're welcome to explore and participate.
+
+You can contribute by reporting issues, proposing improvements, sharing ideas, improving documentation, or submitting pull requests.
+
+Each project maintains its own documentation, contribution guidelines, and licensing terms.
+
+**Explore. Build. Share. Collaborate.**
+
+---
+
+**[geoverse.dev](https://geoverse.dev/)** · [GitHub Organization](https://github.com/geoverse-dev)
+
+*An open universe of geospatial software.*
