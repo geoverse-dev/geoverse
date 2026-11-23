@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Explore the Portolan SDK ecosystem: catalog reading, writing and materialization workflows, language implementations, and shared conformance tests.">
+<title>Portolan SDKs | geoverse.dev</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="portolan-sdks.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="index.html" aria-label="geoverse.dev home"><img src="assets/logo.webp" alt="geoverse.dev"></a>
+<nav class="main-nav" aria-label="Main navigation"><a href="index.html#projects">Projects</a><a href="#implementations">SDKs</a><a href="#conformance">Conformance</a></nav>
+<a class="header-cta" href="https://github.com/geoverse-dev" target="_blank" rel="noopener noreferrer">◉ &nbsp; Explore GitHub ↗</a>
+</div></header>
+<main>
+<section class="sdk-hero"><div class="wrap sdk-hero-grid">
+<div><a class="breadcrumb" href="index.html#projects">← Back to projects</a>
+<div class="eyebrow">PORTOLAN ECOSYSTEM</div>
+<h1>One catalog model.<br><span>Multiple languages.</span></h1>
+<p class="lead">Portolan SDKs explore a consistent way to read, construct, and evolve directory-based geospatial catalogs — with shared conformance tests across implementations.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="#implementations">Explore SDKs →</a><a class="btn btn-outline" href="#conformance">How conformance works ↗</a></div>
+</div>
+<div class="sdk-hero-image"><img src="assets/portolan.webp" alt="Illustration of layered catalogs and geospatial datasets"></div>
+</div></section>
+<section class="wrap sdk-section" id="scope"><div class="section-kicker">WHAT THE SDKs COVER</div><h2>From discovering a catalog to preparing its output.</h2>
+<p class="section-intro">The goal is a reusable catalog abstraction, not a library tied to a particular storage service. The read and write paths are complementary, and implementations can evolve at different speeds.</p>
+<div class="capability-grid">
+<article class="capability"><div class="cap-icon">01</div><h3>Read &amp; navigate</h3><p>Open existing directory-based catalogs, inspect their structure, follow references, and discover their datasets and metadata through a consistent API.</p><span class="small-tag">Catalog discovery</span><span class="small-tag">Metadata</span></article>
+<article class="capability"><div class="cap-icon">02</div><h3>Build &amp; update</h3><p>Construct and modify an in-memory catalog representation before deciding how or where to persist the resulting artifacts.</p><span class="small-tag">Catalog model</span><span class="small-tag">Write workflows</span></article>
+<article class="capability"><div class="cap-icon">03</div><h3>Plan materialization</h3><p>Keep the catalog model separate from the responsibility of writing files to local storage, object stores, or other destinations.</p><span class="small-tag">Storage-agnostic design</span><span class="small-tag">Round-trip validation</span></article>
+</div>
+<div class="note"><strong>Development direction:</strong> Writing and round-trip support are part of the evolving SDK design. The capabilities above describe the intended scope, not a guarantee that every feature is available in every language implementation today. Consult each repository for its current status.</div>
+</section>
+<section class="sdk-band"><div class="wrap"><div class="section-kicker">DESIGN PRINCIPLES</div><h2>Built for interoperable geospatial tooling.</h2><div class="principles">
+<div><h3>One mental model</h3><p>Use a consistent vocabulary for catalogs and their contents across languages.</p></div>
+<div><h3>Portable by design</h3><p>Work with catalog structures without coupling the core API to a particular filesystem or cloud provider.</p></div>
+<div><h3>Testable behavior</h3><p>Use shared fixtures and expectations to catch differences between implementations.</p></div>
+</div></div></section>
+<section class="wrap sdk-section" id="implementations"><div class="section-kicker">IMPLEMENTATIONS</div><h2>Choose your language.</h2><p class="section-intro">Each repository owns its implementation and documentation. Availability and feature coverage may vary.</p>
+<div class="implementation-grid">
+<a class="impl-card" href="https://github.com/geoverse-dev/portolan-python" target="_blank" rel="noopener noreferrer"><div class="impl-icon">Py</div><div><h3>Python SDK <span>↗</span></h3><p>Python implementation of the Portolan catalog model and workflows.</p><div class="impl-meta">Python · Source &amp; docs</div></div></a>
+<a class="impl-card" href="https://github.com/geoverse-dev/portolan-java" target="_blank" rel="noopener noreferrer"><div class="impl-icon">J</div><div><h3>Java SDK <span>↗</span></h3><p>Java implementation for integrating Portolan catalogs into JVM-based applications.</p><div class="impl-meta">Java · Source &amp; docs</div></div></a>
+</div>
+<p class="sdk-footnote">Other language experiments may be added as their repositories become public and ready to share.</p>
+</section>
+<section class="wrap sdk-section conformance-section" id="conformance"><div class="section-kicker">SHARED VALIDATION</div><h2>How Portolan Conformance fits in.</h2><p class="section-intro">A common specification is most useful when independent SDKs can demonstrate that they interpret it consistently. The <a href="https://github.com/geoverse-dev/portolan-conformance" target="_blank" rel="noopener noreferrer">portolan-conformance</a> project provides a shared validation layer.</p>
+<div class="conformance-diagram" aria-label="Conformance fixtures and expected behavior are used to validate the Python and Java SDK implementations">
+<div class="diagram-top"><strong>Portolan specifications &amp; expected behavior</strong><small>Common contracts · Fixtures · Validation scenarios</small></div>
+<div class="diagram-arrow">↓</div><div class="diagram-center"><strong>portolan-conformance</strong><small>Reusable tests and reference cases</small></div>
+<div class="diagram-split"><span>↙</span><span>↘</span></div><div class="diagram-bottom"><div><strong>Python SDK</strong><small>Implementation checks</small></div><div><strong>Java SDK</strong><small>Implementation checks</small></div></div>
+</div>
+<div class="conformance-copy"><h3>What this helps verify</h3><ul><li>Catalog interpretation and structural consistency.</li><li>Expected behavior against shared fixtures.</li><li>Cross-language alignment as APIs evolve.</li><li>Read/write round trips as writing support is developed.</li></ul><p>Conformance tests validate implementations against the shared contracts; they do not replace the specifications themselves or imply that every SDK has completed every test.</p>
+<a class="btn btn-primary" href="https://github.com/geoverse-dev/portolan-conformance" target="_blank" rel="noopener noreferrer">Explore conformance on GitHub ↗</a></div>
+</section>
+<section class="sdk-bottom"><div class="wrap"><h2>Explore the broader ecosystem.</h2><p>Discover integrations, tools, benchmarks and experiments across geoverse.dev.</p><a class="btn btn-primary" href="index.html#projects">All projects →</a></div></section>
+</main>
+<footer><div class="wrap footer-inner"><div><strong>geoverse.dev</strong><span>·</span>An open universe of geospatial software.</div><nav aria-label="Footer"><a href="index.html#projects">Projects</a><a href="https://github.com/geoverse-dev" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></div></footer>
+</body></html>

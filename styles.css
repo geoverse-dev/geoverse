@@ -4,3 +4,4 @@
 .card-image img{image-rendering:auto} .brand img{image-rendering:auto}
 @media(min-width:901px){.hero-art{width:66%;right:-50px;object-fit:contain;object-position:right bottom}}
 @media(max-width:600px){.hero h1{font-size:35px}.card-image{height:175px}.brand img{width:155px}.hero-art{object-fit:cover}}
+\n.card-title-link{color:inherit;text-decoration:none}.card-title-link:hover{color:#147bd4}\n
