@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="geoverse.dev is an open-source hub for geospatial tools, libraries, and experiments.">
+  <title>geoverse.dev — An open universe of geospatial software</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="geoverse.dev home"><img src="assets/logo.webp" alt="geoverse.dev"></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="#projects">Projects</a><a href="https://github.com/geoverse-dev" target="_blank" rel="noopener noreferrer"><svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.5-.29-5.13-1.25-5.13-5.55 0-1.22.44-2.22 1.16-3-.12-.29-.5-1.42.11-2.96 0 0 .95-.3 3.08 1.14a10.7 10.7 0 0 1 5.6 0c2.13-1.44 3.08-1.14 3.08-1.14.61 1.54.23 2.67.11 2.96.72.78 1.16 1.78 1.16 3.01 0 4.31-2.64 5.25-5.15 5.53.41.36.77 1.06.77 2.14v3.17c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>GitHub</a></nav>
+    <a class="header-cta" href="https://github.com/geoverse-dev" target="_blank" rel="noopener noreferrer">◉ &nbsp; Explore GitHub ↗</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy"><h1>An open universe of<br><span>geospatial software.</span></h1><p>Open-source tools, libraries, and experiments for spatial data, maps, and interoperability.</p><div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore projects <span aria-hidden="true">→</span></a></div></div>
+    <img class="hero-art" src="assets/hero-art.webp" alt="geoverse.dev globe above stylized geospatial terrain">
+  </div>
+</section>
+<section class="projects wrap" id="projects">
+  <div class="section-heading"><div><h2>Explore the ecosystem</h2><div class="underline"></div></div><div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All Projects</button><button class="filter" data-filter="portolan" aria-pressed="false">Portolan</button><button class="filter" data-filter="geoserver" aria-pressed="false">GeoServer</button><button class="filter" data-filter="geoparquet" aria-pressed="false">GeoParquet</button><button class="filter" data-filter="research" aria-pressed="false">Research</button></div></div>
+  <div class="cards" id="project-cards">
+    <article class="project-card" data-categories="portolan"><a class="card-image" href="https://github.com/geoverse-dev/portolan-python" target="_blank" rel="noopener noreferrer"><img src="assets/portolan.webp" alt="Illustration of Portolan layered catalogs and directories"></a><div class="card-content"><div class="card-heading"><h3>Portolan SDKs</h3><span class="category">Portolan</span></div><p>APIs for working with directory-based geospatial catalogs and datasets.</p><div class="card-bottom"><div class="tags"><span>Java</span><span>Python</span></div><div class="card-links"><a href="https://github.com/geoverse-dev/portolan-java" target="_blank" rel="noopener noreferrer" aria-label="Portolan Java on GitHub" title="Java SDK">Java ↗</a><a href="https://github.com/geoverse-dev/portolan-python" target="_blank" rel="noopener noreferrer" aria-label="Portolan Python on GitHub" title="Python SDK">Python ↗</a></div></div></div></article>
+    <article class="project-card" data-categories="portolan geoserver"><a class="card-image" href="https://github.com/geoverse-dev/geoserver-portolan" target="_blank" rel="noopener noreferrer"><img src="assets/geoserver.webp" alt="Illustration of GeoServer layers and a map"></a><div class="card-content"><div class="card-heading"><h3>GeoServer + Portolan</h3><span class="category">GeoServer</span><span class="category">Portolan</span></div><p>Connect GeoServer with Portolan catalogs and geospatial datasets.</p><div class="card-bottom"><div class="tags"><span>Java</span><span>GeoServer</span></div><a class="arrow-link" href="https://github.com/geoverse-dev/geoserver-portolan" target="_blank" rel="noopener noreferrer" aria-label="GeoServer Portolan on GitHub">GitHub ↗</a></div></div></article>
+    <article class="project-card" data-categories="geoparquet"><a class="card-image" href="https://github.com/geoverse-dev/josm-geoparquet" target="_blank" rel="noopener noreferrer"><img src="assets/josm.webp" alt="JOSM GeoParquet map editing illustration"></a><div class="card-content"><div class="card-heading"><h3>JOSM GeoParquet</h3><span class="category">GeoParquet</span></div><p>Explore GeoParquet datasets in JOSM alongside OpenStreetMap data.</p><div class="card-bottom"><div class="tags"><span>Java</span><span>JOSM</span></div><a class="arrow-link" href="https://github.com/geoverse-dev/josm-geoparquet" target="_blank" rel="noopener noreferrer" aria-label="JOSM GeoParquet on GitHub">GitHub ↗</a></div></div></article>
+    <article class="project-card" data-categories="geoparquet research"><a class="card-image" href="https://github.com/geoverse-dev/geoparquet-reader-engine-benchmark" target="_blank" rel="noopener noreferrer"><img src="assets/benchmark.webp" alt="Chart comparing GeoParquet reader performance"></a><div class="card-content"><div class="card-heading"><h3>GeoParquet Reader Benchmarks</h3><span class="category">GeoParquet</span></div><p>Benchmarking and examples for GeoParquet readers and spatial queries.</p><div class="card-bottom"><div class="tags"><span>Java</span><span>Benchmark</span></div><a class="arrow-link" href="https://github.com/geoverse-dev/geoparquet-reader-engine-benchmark" target="_blank" rel="noopener noreferrer" aria-label="GeoParquet benchmarks on GitHub">GitHub ↗</a></div></div></article>
+    <article class="project-card" data-categories="portolan"><a class="card-image" href="https://github.com/geoverse-dev/portolan-conformance" target="_blank" rel="noopener noreferrer"><img src="assets/conformance.webp" alt="Portolan conformance checks illustration"></a><div class="card-content"><div class="card-heading"><h3>Portolan Conformance</h3><span class="category">Portolan</span></div><p>Shared behavioral contracts and conformance tests for Portolan SDKs.</p><div class="card-bottom"><div class="tags"><span>Python</span><span>Testing</span></div><a class="arrow-link" href="https://github.com/geoverse-dev/portolan-conformance" target="_blank" rel="noopener noreferrer" aria-label="Portolan conformance on GitHub">GitHub ↗</a></div></div></article>
+    <article class="project-card" data-categories="research"><a class="card-image" href="https://github.com/geoverse-dev/sotm2026-samples" target="_blank" rel="noopener noreferrer"><img src="assets/sotm.webp" alt="Illustration of terrain and a location pin for State of the Map samples"></a><div class="card-content"><div class="card-heading"><h3>SotM 2026 Samples</h3><span class="category">Research</span></div><p>Sample data and resources shared around State of the Map 2026.</p><div class="card-bottom"><div class="tags"><span>Samples</span><span>Maps</span></div><a class="arrow-link" href="https://github.com/geoverse-dev/sotm2026-samples" target="_blank" rel="noopener noreferrer" aria-label="SotM samples on GitHub">GitHub ↗</a></div></div></article>
+  </div>
+  <p class="empty-state" id="empty-state" hidden>No projects found in this category.</p>
+</section>
+<section class="about wrap" id="about"><div class="about-title"><img src="assets/favicon.svg" alt="" aria-hidden="true"><h2>About geoverse.dev</h2></div><p>geoverse.dev is an open-source hub for geospatial software, bringing together tools, libraries, and experimental projects focused on maps, spatial data, and interoperability. Built in the open. Open to collaboration.</p><a href="https://github.com/geoverse-dev" target="_blank" rel="noopener noreferrer">github.com/geoverse-dev ↗</a></section>
+</main>
+<footer><div class="wrap footer-inner"><div><strong>geoverse.dev</strong><span>·</span>An open universe of geospatial software.</div><nav aria-label="Footer"><a href="#projects">Projects</a><a href="https://github.com/geoverse-dev" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></div></footer>
+</body>
+</html>
